@@ -23,7 +23,6 @@
 #                                                                                                         #
 ###########################################################################################################
 
-
 # -*- coding: utf-8 -*-
 import json
 import requests
@@ -31,6 +30,7 @@ import time
 
 #Timer de execução do Robô
 timerCod = time.time()
+
 
 #Conexão com o Pipefy
 
@@ -53,7 +53,7 @@ data = {
     }
 }
 
-
+token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJ1c2VyIjp7ImlkIjozMDE5MTk5NDAsImVtYWlsIjoibHVjYXMuZXN0ZWZhbm9Ab2kubmV0LmJyIiwiYXBwbGljYXRpb24iOjMwMDEzNjY1Nn19.cik3TIMZz1qY7XgNc90yoXOcJvNGTduSaVxUQZ7vanAI5E5IaglcVkgGyhvsOcApLss2I0FLrX6UGgTwFjnpNg'
 autenticacao = ('token', 'exemplo')
 url = 'endpoint'
 r = requests.post(url, json= data, auth=autenticacao)
@@ -78,7 +78,6 @@ print('*---------------------------------------------------------------------*')
 
 
 ##############################################################################
-
 #######GET API Python
 #requisicao = requests.get("http://10.61.228.86:1337/api/contato-parceiros")
 #print(requisicao)
